@@ -1,17 +1,26 @@
-import defaultTheme from "tailwindcss/defaultTheme";
-import forms from "@tailwindcss/forms";
+import defaultTheme from 'tailwindcss/defaultTheme';
+import forms from '@tailwindcss/forms';
+import daisyui from 'daisyui';
 
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-        "./vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php",
-        "./storage/framework/views/*.php",
-        "./resources/views/**/*.blade.php",
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        './storage/framework/views/*.php',
+        './resources/views/**/*.blade.php',
     ],
 
-    daisyui: {
-        themes: ["light", "dark", "cupcake","coffee","dim"],
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+            },
+        },
     },
 
-    plugins: [forms],
+    plugins: [forms, daisyui], // Add DaisyUI to the plugins array
+
+    daisyui: {
+        themes: ['coffee'], // Set the Coffee theme
+    },
 };

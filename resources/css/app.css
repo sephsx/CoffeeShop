@@ -1,3 +1,7 @@
+/* resources/css/app.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Import DaisyUI styles (DaisyUI components will automatically be included) */
+@import 'daisyui';
