@@ -21,6 +21,6 @@ export default {
     plugins: [forms, daisyui], // Add DaisyUI to the plugins array
 
     daisyui: {
-        themes: ['coffee'], // Set the Coffee theme
+        themes: ['coffee','dim'], // Set the Coffee theme
     },
 };
