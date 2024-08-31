@@ -86,7 +86,7 @@
             <div class="relative bg-white rounded-lg shadow-lg dark:bg-primary-foreground">
                 <!-- Modal header -->
                 <div class="flex items-center justify-between p-5 border-b border-gray-300 rounded-t dark:border-secondary">
-                    <h3 class="text-2xl font-bold text-primary dark:text-white">
+                    <h3 class="text-2xl font-bold text-primary dark:text-black">
                         Sign in to our platform
                     </h3>
                     <button type="button" class="text-secondary bg-transparent hover:bg-secondary/80 hover:text-secondary-foreground rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="authentication-modal">
@@ -100,11 +100,11 @@
                 <div class="p-6">
                     <form class="space-y-4" action="#">
                         <div>
-                            <label for="email" class="block mb-2 text-sm font-medium text-primary dark:text-white">Your email</label>
-                            <input type="email" name="email" id="email" class="bg-secondary-foreground border border-primary text-primary text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" placeholder="name@company.com" required />
+                            <label for="email" class="block mb-2 text-sm font-medium text-primary dark:text-black">Your email</label>
+                            <input type="email" name="email" id="email" class="bg-secondary-foreground border border-primary text-primary text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" placeholder="name@gmail.com" required />
                         </div>
                         <div>
-                            <label for="password" class="block mb-2 text-sm font-medium text-primary dark:text-white">Your password</label>
+                            <label for="password" class="block mb-2 text-sm font-medium text-primary dark:text-black">Your password</label>
                             <input type="password" name="password" id="password" placeholder="••••••••" class="bg-secondary-foreground border border-primary text-primary text-sm rounded-lg focus:ring-secondary focus:border-secondary block w-full p-2.5" required />
                         </div>
                         <div class="flex justify-between">
@@ -112,12 +112,12 @@
                                 <div class="flex items-center h-5">
                                     <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-primary rounded bg-secondary-foreground focus:ring-3 focus:ring-secondary" required />
                                 </div>
-                                <label for="remember" class="ms-2 text-sm font-medium text-primary dark:text-white">Remember me</label>
+                                <label for="remember" class="ms-2 text-sm font-medium text-primary dark:text-black">Remember me</label>
                             </div>
                             <a href="#" class="text-sm text-secondary hover:underline dark:text-secondary">Lost Password?</a>
                         </div>
-                        <button type="submit" class="w-full text-primary-foreground bg-primary hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-primary-foreground font-medium rounded-lg text-sm px-5 py-2.5 text-center">Login to your account</button>
-                        <div class="text-sm font-medium text-primary dark:text-white">
+                        <button type="submit" class="w-full text-primary-foreground bg-primary hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-primary-foreground font-medium rounded-lg text-sm px-5 py-2.5 text-center text-black">Login to your account</button>
+                        <div class="text-sm font-medium text-primary dark:text-black">
                             Not registered? <a href="#" class="text-secondary hover:underline dark:text-secondary">Create account</a>
                         </div>
                     </form>
@@ -127,8 +127,10 @@
     </div>
 
     <script>
-        document.querySelector('.scroll-indicator').addEventListener('click', function () {
-            document.querySelector('section').scrollIntoView({ behavior: 'smooth' });
+        document.querySelector('.scroll-indicator').addEventListener('click', function() {
+            document.querySelector('section').scrollIntoView({
+                behavior: 'smooth'
+            });
         });
 
         // JavaScript to toggle modal display
